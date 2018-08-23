@@ -1,0 +1,43 @@
+.video_03 {
+    position: relative;
+    background-color: #000;
+    .title {
+        padding: 50px $m_gap 0 $m_gap;
+        text-align: center;
+        font-size: 28px;
+        line-height: 1.5em;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: $white;
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            max-width: 720px;
+            height: 1px;
+            margin: 15px auto 10px auto;
+            background-color: $white;
+        }
+    }
+    .videoWrap {
+        margin: 20px 0;
+        width: 100%;
+        @include screen(tb) {
+            margin: 50px 0;
+        }
+        .videoYT {
+            text-align: center;
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 */
+            height: 0;
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+doctype html
+html(lang='zh-TW')
+  head
+    include ./base/head.pug
+  body
+    #fb-root
+    h1.hide Holic
+    include ./nav/n_01.pug
+    include ./header/h_03.pug
+
+    include ./social/s_a.pug
+    include ./board/b_01.pug
+
+    include ./order/o_01.pug
+    include ./order/o_02.pug
+    include ./order/o_03.pug
+    include ./prize/p_01.pug
+
+    include ./footer/f_01.pug
+
+
+    // JS start
+    include ./nav/n_01_tem.pug
+
+    // JS cdn
+    include ./base/cdnjs.pug
+
+    // JS DEV FILE
+    include ./base/devjs.pug
+
+    // JS MIN FILE
+    //- include ./base/minjs.pug
+
+    // JS third party
+    script(type='text/javascript')
+      include ./js/foot.js
+    // JS third party end
+
+    // JS end

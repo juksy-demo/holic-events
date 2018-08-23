@@ -1,0 +1,56 @@
+// social_01
+section.order01(data-menu='true')
+    .articleWrap
+        .txtWrap
+            h2.title 立即預購
+            //https://pjchender.blogspot.com/2015/04/jquery_27.html
+            form(method="post")
+                .inner
+                    label 姓名
+                    input(type="text" required autocomplete="off")
+                .inner
+                    label 電話
+                    input(type="phone" required autocomplete="off")
+                .inner    
+                    label Email
+                    input(type="email" required autocomplete="off")
+                .inner
+                    label 地址
+                    #twzipcode
+                .inner    
+                    label
+                    input(type="address" required autocomplete="off")
+                .inner
+                    label.sp 商品
+                    ul.radio
+                        li
+                            input(type="radio" id="product-option-1" name="product" value="1")
+                            .check
+                            label(for="product-option-1") B&O Player                            
+                        li
+                            input(type="radio" id="product-option-2" name="product" value="2")
+                            .check
+                            label(for="product-option-2") SOG collapsible
+                        li
+                            input(type="radio" id="product-option-3" name="product" value="3")
+                            .check
+                            label(for="product-option-3") Infatable Blimpr
+                        li
+                            input(type="radio" id="product-option-4" name="product" value="4")
+                            .check
+                            label(for="product-option-4") SIGG small
+                        li
+                            input(type="radio" id="product-option-5" name="product" value="5")
+                            .check
+                            label(for="product-option-5") Stacking Cups
+                        li
+                            input(type="radio" id="product-option-6" name="product" value="6")
+                            .check
+                            label(for="product-option-6") Tumbler Glasses
+                        li
+                            input(type="radio" id="product-option-7" name="product" value="7")
+                            .check
+                            label(for="product-option-7") BoxLog
+            .btnWrap
+                button.primary(type="submit") 立即預約
+// social_01 end

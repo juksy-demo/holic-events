@@ -1,0 +1,164 @@
+.order01 {
+    padding: 50px 0;
+    .articleWrap {
+        position: relative;
+        overflow: hidden;
+        padding: 60px;
+        background-color: #f4f4f4;
+        border-radius: 60px; 
+        width: 100%;
+        box-sizing: border-box;
+        @include screen(pcSmall) {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .txtWrap {
+            color: $black;
+            padding: 0 $m_gap;
+            position: relative;
+            @include screen(tb) {
+                padding: 0 $tb_gap;
+            }
+            @include screen(pcSmall) {
+                margin-bottom: 30px;
+                padding: 40px 60px;
+            }
+            .title {
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 20px;
+                @include screen(pcSmall) {
+                    text-align: left;
+                }
+            }
+            form {
+                .inner {
+                    display: flex;
+                    margin: 0 0 30px 0;
+                }
+                label {
+                    align-items: center;
+                    display: inline-flex;
+                    width: 80px;
+                    transition:all 0.25s ease;
+                    outline: none;
+                    border: none;
+                    pointer-events: none;
+                    font-size:22px;
+                }
+                input {                    
+                    display: inline-block;
+                    width: 100%;
+                    height:100%;
+                    padding: 10px 25px;
+                    outline: none;
+                    border: none;
+                    border-radius: 20px;
+                    box-sizing: border-box;
+                    font-size:22px;
+                    transition:border-color .25s ease, box-shadow .25s ease;
+                    &.error {
+                        border:2px solid #FF5050;
+                    }
+                }                
+                .county, .district {
+                    display: inline-block;
+                    font-size:18px;
+                    width: 190px;
+                    height: 50px;
+                    padding: 10px 25px;
+                    border-radius: 20px;
+                    outline: none;
+                    border: none;
+                    box-sizing: border-box;
+
+                    appearance:none;
+                    background: url("../img/arrow.png") no-repeat scroll 165px center #fff;
+                    padding-right: 14px;
+                    &::-ms-expand { display: none; }
+                }
+                .county {
+                    margin-right: 35px;
+                }
+                .zipcode {
+                    width: auto;
+                    background: none;
+                }
+                label.sp { align-items: flex-start; padding-top: 10px; }
+                ul.radio {
+                    width: 100%;
+                    list-style: none;
+                    [type="checkbox"], [type="radio"] {
+                        ~ label {   
+                          pointer-events: auto;
+                        }
+                    }
+                    li {
+                        width: 49%;
+                        display: inline-flex;
+                        align-items: center;
+                        position: relative;
+                        margin-bottom: 10px;
+                        &:hover {
+                            .check { border: 5px solid #FFFFFF; }
+                            label { color:$white; }
+                        }
+                    }
+                    input {
+                        position: absolute;
+                        visibility: hidden;
+                        width: 0;
+                        height: 0;
+                        &:checked {
+                            &~ .check { border: 5px solid #0DFF92; }
+                            &~ .check:before{ background: #0DFF92; }
+                            &~ label{ color: #0DFF92; }
+                        }
+                    }
+                    label {
+                        // display: inline-block;
+                        // position: relative;
+                        width: 100%;
+                        padding: 10px 10px 10px 42px;
+                        margin: 0;
+                        width: auto;
+                        cursor: pointer;
+                        transition: all 0.25s linear;
+                        z-index: 2;
+                    }
+                    .check{
+                        display: inline-block;
+                        position: absolute;
+                        border: 5px solid #AAAAAA;
+                        border-radius: 100%;
+                        height: 25px;
+                        width: 25px;
+                        top: 5px;
+                        left: 0;
+                        transition: border .25s linear;
+                        &:before {
+                            display: block;
+                            position: relative;
+                            content: '';
+                            border-radius: 100%;
+                            height: 15px;
+                            width: 15px;
+                            top: 5px;
+                            left: 0;
+                            margin: auto;
+                            transition: background 0.25s linear;
+                        }
+                    }
+                }
+            }
+            .btnWrap {
+                button {
+                    @include custom_button;
+                    &.primary {
+                        @include custom_button_primary;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Holic",
+  "version": "1.0.0",
+  "description": "https://juksy-demo.github.io/xxxxx/",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juksy-demo/xxxx.git"
+  },
+  "author": "Tony <tony@juksy.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juksy-demo/xxxxx/issues"
+  },
+  "homepage": "https://github.com/juksy-demo/xxxxx#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglifycss": "^1.0.6"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "browser-sync": "^2.24.5",
+    "clipboard": "^1.5.16",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-uglify": "^3.0.0",
+    "handlebars": "^4.0.6",
+    "jquery": "^3.1.1",
+    "jquery-touchswipe": "^1.6.15",
+    "jquery.dotdotdot": "^1.7.4",
+    "lightslider": "^1.1.6",
+    "lodash": "^4.17.4",
+    "photoswipe": "^4.1.1",
+    "wowjs": "^1.1.3"
+  }
+}

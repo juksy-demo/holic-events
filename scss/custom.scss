@@ -1,0 +1,60 @@
+// body {
+//   //若使用 header_02 將背景變成黑色 影片較不會破圖
+//   background-color: $black;
+// }
+
+
+.list_04 {
+  //模板背景色
+  background-color: $black;
+  .layoutWrap {
+    .title {
+      // 上標題文字顏色
+      color: $white;
+      &:after {
+        // 上標題底線顏色
+        background-color: $white;
+      }
+    }
+    .detail {
+      //下標題文字顏色
+      color: $white;
+    }
+    .subTitleWrap {
+      .subTitle {
+        //描述文字顏色
+        color: $white;
+      }
+    }
+    .sliderWrap {
+      .slidesWrap {
+        ul.slides {
+          li {
+            .txtWrap {
+              a.txt {
+                //文字顏色
+                color: $white;
+                h3 {
+                  @include screen(pcLarge) {
+                    //文字滑過色塊
+                    @include linear-gradient(to right, transparent 50%, rgba(0,243,41,0.5));
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+ul.fixedBtn_01,
+.fixedBtnCover_01 .coverWrap .main .mainWrap .item ul.share {
+  li .material_btn {
+    //按鈕色
+    background-color: rgba(51,51,51,1);
+  }
+}
